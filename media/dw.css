@@ -33,6 +33,10 @@
     font-size: clamp(0.5rem, 2.15vw, 1rem);
 }
 
+.dw-text-pr {
+    font-size: clamp(0.5rem, 4.00vw, 1rem);
+}
+
 .dw-first-row {
     width: 15%;
 }
