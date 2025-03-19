@@ -1,0 +1,134 @@
+/* fallback */
+@font-face {
+  font-family: 'Material Icons';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://dohm.work/parkrun/font/materialize-icons.woff2) format('woff2');
+}
+
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1;
+  letter-spacing: normal;
+  text-transform: none;
+  display: inline-block;
+  white-space: nowrap;
+  word-wrap: normal;
+  direction: ltr;
+  -moz-font-feature-settings: 'liga';
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @extend .deep-purple, .darken-4, .white-text;
+
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+main {
+  display: static;
+  flex: 1 0 auto;
+}
+
+.white-row {
+  @extend .row, .white, .deep-purple-text, .text-darken-4;
+  margin: 0 !important;
+  position: relative;
+  top: -4rem;
+  padding: 1.4rem;
+}
+
+.first-white-row {
+  @extend .white-row;
+  padding-top: 5rem;
+}
+
+.spaced {
+  padding-top: 1rem !important;
+}
+
+.main-img {
+  border-width: 0.33rem 0 0rem 0;
+  border-color: #ffa000;
+  border-style: solid;
+}
+
+.caption {
+  @extend .deep-purple, .darken-2, .white-text;
+  position: relative;
+  top: -0.33rem;
+  padding: 0.33rem 0 0.33rem 0;
+  font-size: 0.7rem;
+  // font-weight: 200;
+}
+
+.heading {
+  margin-top: 2rem;
+}
+
+.more-img-wrapper {
+  position: relative;
+  bottom: 2.5rem;
+  font-size: 16px;
+}
+
+.more-img-bubble {
+  height: 2rem;
+  padding-top: 0.5rem !important;
+  margin-top: 0px !important;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-top-left-radius: 33vh;
+  border-style: solid;
+  border-width: 0.16rem 0 0 0.16rem;
+  border-color: rgba(255, 255, 255, 0.7);;
+}
+
+.bubble-wrapper {
+  @extend .amber, .darken-1, .white-text;
+  position: relative;
+  z-index: 2;
+  border-top-left-radius: 50vh;
+  border-bottom-left-radius: 50vh;
+}
+
+.bubble {
+  padding: 1.4rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.social {
+  .social-icon {
+    @extend .col, .l1, .m1, .s3, .right-align;
+    height: 50px; 
+  }
+  .social-text {
+    @extend .col, .l3, .m5, .s9, .left-align;
+    height: 50px; 
+  }
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+h1,
+h3 {
+  @extend .amber-text, .text-darken-1;
+}
+
+h1 {
+  margin-top: 0.33rem;
+}
+
+a {
+  @extend .deep-purple-text, .text-darken-4;
+}
